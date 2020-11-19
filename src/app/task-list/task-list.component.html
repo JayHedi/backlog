@@ -1,0 +1,22 @@
+<div class="list-container">
+    <h2>My task</h2>
+<ul>
+<mat-accordion>
+  <li *ngFor="let task of tasks | async">
+    <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{task.title}}
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>Description: {{task.description}}</p>
+        <p>Story Points: {{task.storypoint}}</p>
+        <button mat-mini-fab color="warn" aria-label="delete task" style="position: absolute; right: 1%; bottom: 3%;"
+        (click) = "deleteTask(task)">
+            <mat-icon>delete</mat-icon>
+        </button>
+      </mat-expansion-panel>
+  </li>
+</mat-accordion>
+</ul>
+</div>

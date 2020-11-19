@@ -1,0 +1,15 @@
+<mat-toolbar>
+    <span>{{ title | uppercase }}</span>
+    <span class="example-spacer"></span>
+    <a  routerLink="tasks" mat-raised-button color="primary">Show tasks</a>
+</mat-toolbar>
+
+<div class="content">
+    <router-outlet></router-outlet>
+</div>
+
+<div class="add">
+    <a  routerLink="task-add" mat-fab color="accent">
+        <mat-icon>add</mat-icon>
+    </a>
+</div>

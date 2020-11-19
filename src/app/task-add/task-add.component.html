@@ -1,0 +1,19 @@
+<div class="form-container">
+  <form [formGroup]="taskForm" (ngSubmit) = "addTask(task)">
+    <mat-form-field appearance="fill">
+      <mat-label>Title</mat-label>
+      <input matInput formControlName="title">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+        <mat-label>Story point</mat-label>
+        <input matInput formControlName="storypoint">
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="description"></textarea>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">ADD</button>
+  </form>
+</div>
