@@ -18,18 +18,13 @@ export class TaskService {
     return this.httpClient.get<Task[]>('http://localhost:3000/tasks');
   }
 
-  /*deleteTask(taskTitle): Observable<Task>{
-    const taskUrl = 'http://localhost:3000/tasks/' + taskTitle;
+  deleteTask(taskTitle): Observable<Task>{
+    const taskUrl = 'http://localhost:3000/tasks';
     return this.httpClient.delete<Task>(taskTitle);
   }
 
   addTask(task: Task): Observable<Task>{
     console.log('3');
-    const url = 'http://localhost:3000/tasks';
-    return this.httpClient.post<Task>(url , task);
+    return this.httpClient.post<Task>('http://localhost:3000/tasks' , task);
   }
-  /*addTask(task: Task): Observable<Task>{
-    const taskUrl = 'http://localhost:3000/tasks';
-    return this.http.post<Task>(task);
-  }*/
 }

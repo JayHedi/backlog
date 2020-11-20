@@ -10,21 +10,22 @@ import { TaskService } from '../task.service';
 })
 export class TaskAddComponent implements OnInit {
 
+  task: Task;
+
   taskForm = new FormGroup ({
     title: new FormControl(''),
     description: new FormControl(''),
     storypoint: new FormControl('')
   });
 
-  task: Task = this.taskForm.value;
-
   constructor(private taskService: TaskService) {  }
 
- /* addTask(task): void {
-    this.taskService.addTask(task).subscribe( data => {
+  addTask(taskAdd: Task): void {
+    taskAdd = this.taskForm.value;
+    this.taskService.addTask(taskAdd).subscribe( data => {
       console.log(data);
     });
-  }*/
+  }
 
   ngOnInit(): void {
   }
