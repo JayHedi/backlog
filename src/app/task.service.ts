@@ -18,9 +18,9 @@ export class TaskService {
     return this.httpClient.get<Task[]>('http://localhost:3000/tasks');
   }
 
-  deleteTask(taskTitle): Observable<Task>{
-    const taskUrl = 'http://localhost:3000/tasks';
-    return this.httpClient.delete<Task>(taskTitle);
+  deleteTask(taskID): Observable<Task>{
+    const taskUrl = 'http://localhost:3000/tasks/' + taskID;
+    return this.httpClient.delete<Task>(taskUrl);
   }
 
   addTask(task: Task): Observable<Task>{

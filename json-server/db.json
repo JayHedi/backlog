@@ -1,40 +1,10 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "title": "task 1",
-      "description": "this is  a description of the task",
-      "storypoint": 2
-    },
-    {
-      "id": 2,
-      "title": "task 1",
-      "description": "this is  a description of the task",
-      "storypoint": 2
-    },
-    {
-      "id": 3,
-      "title": "task 1",
-      "description": "this is  a description of the task",
-      "storypoint": 2
-    },
-    {
-      "id": 4,
-      "title": "task 1",
-      "description": "this is  a description of the task",
-      "storypoint": 2
-    },
-    {
       "title": "task 44",
       "description": "dfgdn s sdkf \n",
       "storypoint": "4",
       "id": 16
-    },
-    {
-      "title": "task 44",
-      "description": "efasdf ",
-      "storypoint": "2",
-      "id": 17
     }
   ]
 }
